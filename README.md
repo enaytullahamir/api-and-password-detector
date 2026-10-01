@@ -61,14 +61,14 @@ tools look for.
 Requires `gcc` (or any C compiler). No external libraries needed.
 
 ```bash
-gcc -o detector secretscan.c
+gcc -o detector api-password-detector.c
 ./detector
 ```
 
 ## 🧪 Example
 
 ```
-=== Simple Secret Scanner ===
+=== Simple Api and Password Detector ===
 Enter the file name to scan: test_secrets.txt
 [ALERT] Line 2: possible secret found (matched "akia")
 [ALERT] Line 3: possible secret found (matched "ghp_")
@@ -79,8 +79,8 @@ Scanned 9 line(s).
 RESULT: 8 possible secret(s) found. Commit should be BLOCKED.
 ```
 
-Two test files are included: `test_secrets.txt` (should trigger
-several alerts) and `test_clean.txt` (should pass with no alerts).
+Two test files are included: `secrets.txt` (should trigger
+several alerts) and `clean.txt` (should pass with no alerts).
 
 ## ⚠️ Limitations
 
