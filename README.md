@@ -94,4 +94,4 @@ several alerts) and `clean.txt` (should pass with no alerts).
 - we are going add some more features like it can access the entire computer like you just have to enter your file name thats it  
 ## 👥 Built by
 
-Md Enaytullah Amir / Rohit Kumar
+Md Enaytullah Amir / Rohit Kumar / Mohammad Afzal Khan
