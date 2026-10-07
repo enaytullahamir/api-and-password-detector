@@ -1,10 +1,10 @@
-# API & Password Detector
+## GITGUARD
 
 A simple C program that scans a text file and flags lines containing
 hardcoded passwords, API keys, or tokens — before that file gets
 committed to Git.
 
-## 📌 Why we built this
+##  Why we built this
 
 Hardcoded secrets are one of the most common security mistakes in
 real codebases. According to GitGuardian's *State of Secrets Sprawl
@@ -15,7 +15,7 @@ it's deleted later. Big tools like `gitleaks` and `truffleHog` solve
 this at a company scale. We built a small version of the same idea —
 one we fully understand — as a learning project.
 
-## ✨ Features
+##  Features
 
 - Scans any text file for hardcoded secrets
 - Recognizes **45+ patterns**, including real key formats from AWS,
@@ -26,7 +26,7 @@ one we fully understand — as a learning project.
 - Lets you mark a specific line as safe to ignore
 - Plain C, zero external libraries
 
-## 🔍 What it detects
+##  What it detects
 
 | Provider | Example prefix(es) |
 |---|---|
@@ -44,7 +44,7 @@ keys a fixed, recognizable prefix, specifically so leak-scanners can
 catch and auto-revoke them. We're checking for the same prefixes real
 tools look for.
 
-## ⚙️ How it works
+##  How it works
 
 1. You enter a filename in your directory when the program starts.
 2. It reads the file one line at a time.
@@ -56,7 +56,7 @@ tools look for.
    anything was found, or `0` if the file was clean — the same signal
    Git checks when deciding whether to allow a commit.
 
-## 🚀 Getting started
+##  Getting started
 
 Requires `gcc` (or any C compiler). No external libraries needed.
 
@@ -65,7 +65,7 @@ gcc -o detector api-password-detector.c
 ./detector
 ```
 
-## 🧪 Example
+##  Example
 
 ```
 === Simple Api and Password Detector ===
@@ -82,16 +82,17 @@ RESULT: 8 possible secret(s) found. Commit should be BLOCKED.
 Two test files are included: `secrets.txt` (should trigger
 several alerts) and `clean.txt` (should pass with no alerts).
 
-## ⚠️ Limitations
+##  Limitations
 
 - Only catches secrets under a known keyword or prefix — an unusual
   variable name can slip through
 - Checks one file per run, typed in manually
 - Not yet wired into Git automatically
 
-## 🔮 What's next
+##  What's next
 - we are going to make it more useful and more advance and you don't need to compile it every time you download it .
 - we are going add some more features like it can access the entire computer like you just have to enter your file name thats it  
-## 👥 Built by
+##  Built by
 
 Md Enaytullah Amir / Rohit Kumar / Mohammad Afzal Khan
+
